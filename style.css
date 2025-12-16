@@ -1,0 +1,493 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1b1d22;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navBar {
+  background-color: black;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks1 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0.5rem 20rem;
+}
+
+.navLinks2 {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 8rem;
+}
+
+.navLinks3 {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navLinks1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.navLinks1 button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navLinks1 button i {
+  background-color: transparent;
+  font-size: 2em;
+}
+
+.navLinks1 .logoName {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navLinks2 a {
+  font-weight: 500;
+}
+
+.navLinks3 li {
+  font-weight: 500;
+}
+
+.navLinks2 a:hover {
+  color: #498cf7;
+  cursor: pointer;
+}
+
+.navLinks3 #contactMe {
+  background-color: #003c9c;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.navLinks3 #contactMe:hover {
+  color: #000000;
+  background-color: #0057e2;
+  cursor: pointer;
+}
+
+.heroSectionContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 1rem;
+  gap: 3rem;
+}
+
+.introductionContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  max-width: 1280px;
+  align-items: center;
+  gap: 3rem;
+  padding: 8rem 1rem;
+}
+
+.introductionContainer #name {
+  color: rgba(255, 255, 255, 0.507);
+  font-size: 16px;
+}
+
+.introductionContainer h1 {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.introductionContainer .highlight {
+  color: #4285f4;
+  display: block;
+}
+
+.introductionContainer #shortIntro {
+  font-size: 14px;
+  color: rgb(223, 223, 223);
+}
+
+.skillIcons {
+  display: flex;
+  gap: 80px;
+  margin: 2.5rem 0;
+  justify-content: center;
+}
+
+.skillIcons i {
+  font-size: 70px;
+  transition: all 0.3s ease;
+}
+
+.skillIcons #python:hover,
+#JavaScript:hover,
+#Database:hover,
+#html:hover,
+#css:hover {
+  font-size: 80px;
+}
+
+.profileSection {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.profileContent {
+  display: flex;
+  gap: 12rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.profileText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.profileDetails {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.profileSection .profileTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.profileContainer img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profileText h1 {
+  text-align: left;
+}
+
+.profileText .job-title {
+  align-self: flex-start;
+  text-align: right;
+  font-size: 1rem;
+  color: #4285f4;
+}
+
+.contactInfo {
+  display: grid;
+  gap: 10px;
+}
+
+.contactInfo span {
+  font-weight: 300;
+}
+
+#editJobBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#editJobBtn:hover {
+  cursor: pointer;
+  background-color: #4a8fff;
+}
+
+.aboutMeContainer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.aboutMeContainer h1 {
+  margin-bottom: 60px;
+}
+
+.aboutMeContainer #introductionP {
+  margin-bottom: 60px;
+  max-width: 900px;
+  text-align: center;
+}
+
+#achievementSection {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+
+#achievementSection h2 {
+  margin-bottom: 20px;
+}
+
+#achievementSection span {
+  text-align: center;
+  max-width: 700px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skills-column.left-column h2,
+.skills-column.right-column h2 {
+  margin-bottom: 1rem;
+}
+
+.skills-column h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skills-column dl {
+  margin: 0;
+}
+
+.skills-column dt {
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.skills-column dd {
+  margin-left: 0;
+  margin-bottom: 10px;
+  color: #a5a5a5;
+  text-align: center;
+}
+
+.contactMeContainer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  background-color: #1b1d22;
+  gap: 2rem;
+}
+
+.contactMeContainer h1 {
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contactMeContainer p {
+  font-size: 1rem;
+  color: #a5a5a5;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background-color: #121216;
+  color: white;
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contactForm button {
+  background-color: #0062ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+  background-color: #0062ff83;
+}
+
+.footerCopyright {
+  text-align: center;
+  margin-top: 2rem;
+  color: #a5a5a5;
+  font-size: 0.8rem;
+}
+
+.footerSection {
+  background-color: #1b1d22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+}
+
+#dateDisplay {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+body.light-mode {
+  background-color: #f0f2f5;
+  color: #1b1d22;
+}
+
+body.light-mode .navBar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+body.light-mode .navLinks1 a,
+body.light-mode .navLinks1 button,
+body.light-mode .navLinks1 button i {
+  color: #1b1d22;
+}
+
+body.light-mode .navLinks2 a:hover {
+  color: #007bff;
+}
+
+body.light-mode .navLinks3 #contactMe {
+  background-color: #007bff;
+  color: white;
+}
+
+body.light-mode .navLinks3 #contactMe:hover {
+  background-color: #0056b3;
+}
+
+body.light-mode .introductionContainer #name {
+  color: #555;
+}
+
+body.light-mode .introductionContainer h1 {
+  color: #1b1d22;
+}
+
+body.light-mode .introductionContainer .highlight {
+  color: #007bff;
+}
+
+body.light-mode .introductionContainer #shortIntro {
+  color: #333;
+}
+
+body.light-mode .contactInfo span {
+  color: #1b1d22;
+}
+
+body.light-mode .skills-column dd {
+  color: #555;
+}
+
+body.light-mode .contactMeContainer {
+  background-color: #e4e6eb;
+}
+
+body.light-mode .contactForm input,
+body.light-mode .contactForm textarea {
+  background-color: #ffffff;
+  color: #1b1d22;
+  border: 1px solid #ddd;
+}
+
+body.light-mode .contactForm input::placeholder,
+body.light-mode .contactForm textarea::placeholder {
+  color: #aaa;
+}
+
+body.light-mode .contactForm button {
+  background-color: #007bff;
+}
+
+body.light-mode .contactForm button:hover {
+  background-color: #0056b3;
+}
+
+body.light-mode .footerSection {
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  color: #1b1d22;
+}
+
+body.light-mode .footerCopyright {
+  color: #555;
+}
